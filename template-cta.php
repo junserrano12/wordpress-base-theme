@@ -1,5 +1,4 @@
 <?php if ( is_active_sidebar( 'cta-container-top-widget-container' ) ) { dynamic_sidebar( 'cta-container-top-widget-container' ); } ?>
-
 <div class="content">
 	<div class="cta">
 	<?php if(get_settings_option('ctaiscalendar', 'style_option')){ ?>

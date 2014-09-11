@@ -246,7 +246,7 @@ function basetheme_unregister_default_widgets() {
     /*unregister_widget('WP_Nav_Menu_Widget');*/
 }
 
-/*SET SETTINGS OPTION MENU
+/*SET SETTINGS OPTION MENU*/
 function basetheme_update_options(){
 	if (get_page_by_title('Home', 'OBJECT', 'page') ){
 		$home = get_page_by_title( 'Home' );
@@ -265,7 +265,7 @@ function basetheme_update_options(){
 	update_site_option('permalink_structure', '/%postname%/');
 	update_site_option('image_default_link_type','none');
 }
-*/
+
 /*REMOVE RSS VERSION*/
 function basetheme_rss_version() { return ''; }
 

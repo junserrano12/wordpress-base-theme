@@ -12,32 +12,7 @@
 			<footer id="footer">
 				<div id="footer-container">
 					<div class="content">
-						<div class="row-fluid">
-							<div class="span4">
-								<div id="footer-logo-container">
-									<?php get_template_part('template', 'logo'); ?>
-								</div>
-							</div>
-							<div class="span2">
-								<div id="secondary-menu-container">
-									<h4>Quick Links</h4>
-									<?php get_template_part('template', 'secondary'); ?>
-								</div>
-							</div>
-							<div class="span4">
-								<div id="copyright-container">		
-									<h4>Contact</h4>
-									<?php get_template_part('template', 'footer-address'); ?>
-									<?php get_template_part('template', 'copyright'); ?>
-								</div>
-							</div>
-							<div class="span2">
-								<div id="social-media-container">
-									<h4>Follow Us</h4>
-									<?php get_template_part('template', 'social'); ?>
-								</div>
-							</div>
-						</div>
+						<?php if ( is_active_sidebar( 'footer-container-content-widget-container' ) ) { dynamic_sidebar( 'footer-container-content-widget-container' ); } ?>
 					</div>
 				</div>
 			</footer>

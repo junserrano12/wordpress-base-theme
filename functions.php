@@ -3,7 +3,7 @@ add_action('after_setup_theme','theme_setup', 15);
 function theme_setup() {
     add_action('init', 'basetheme_head_cleanup');
 	add_action('init', 'basetheme_setup_pages');
-	/*add_action('init', 'basetheme_update_options');*/
+	add_action('init', 'basetheme_update_options');
 	add_action('init', 'basetheme_navigation_menus');
 	add_action('init', 'basetheme_custom_image_size');	
     add_action('wp_head', 'basetheme_remove_recent_comments_style', 1);
